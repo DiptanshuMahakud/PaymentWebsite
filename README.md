@@ -1,3 +1,21 @@
+# Steps to use this repo
+
+1. clone the repo
+2. npm install
+3. cd packages/db
+4. add a .env file and place your database url
+5. npx prisma migrate dev
+6. npx prisma generate
+7. add a .env file in user-app and merchant-app
+8. in user-app .env file add->
+   JWT_SECRET=your password
+   NEXTAUTH_URL=http://localhost:3000
+9. in merchant-app .env file add->
+   GOOGLE_CLIENT_ID=
+   GOOGLE_CLIENT_SECRET=
+   NEXTAUTH_URL=http://localhost:3001
+   NEXTAUTH_SECRET=your secret
+
 # Turborepo starter
 
 This is an official starter Turborepo.
